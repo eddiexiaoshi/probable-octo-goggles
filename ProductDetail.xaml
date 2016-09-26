@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Project2.ProductDetail"
+             Title="Product page"
+             >
+  
+  <ScrollView>
+ <StackLayout Orientation="Vertical"
+             HorizontalOptions="Center"
+             VerticalOptions="Center"
+              Padding="40">
+
+   <Image Source="lattte.png"></Image>
+   <Label Text="Latte" VerticalOptions="Center" HorizontalOptions="Center" Font="25"/>
+  <Label Text=" Baristas craft the latte in a very different way. The layers of espresso and steamed milk are mixed together and topped with a light layer of foam. The drink is creamier and the coffee flavor is more subtle." VerticalOptions="Center" HorizontalOptions="Center" Font="10"/>
+   
+  <Button Text="Choose your bean"
+          Clicked="Bean_Onclicked"/>
+   <Button Text="Choose your Milk"
+          Clicked="Milk_Onclicked"/>
+   
+   <Label Text="Have your strength"/>
+   <Slider x:Name="MainSlider"
+           Minimum="0"
+           Maximum="100"
+           ValueChanged="MainSlider_OnValueChanged"/>
+   
+<Label x:Name="MainLabel" FontSize="10"/>
+   
+   <Label Text="Latte art Pattern"/>
+ <Picker x:Name="MainPicker"
+         SelectedIndexChanged="MainPicker_OnSelectedIndexChanged"/>
+
+   <Grid Padding="0,0,0,5"/>
+   <Button Clicked="Yes_OnClicked"
+           Text ="Yes!"
+           FontSize="20"
+           BackgroundColor="Transparent"
+           TextColor="White"/>
+  </StackLayout>
+ </ScrollView>
+</ContentPage>

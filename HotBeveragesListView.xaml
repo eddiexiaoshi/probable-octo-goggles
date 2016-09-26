@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Project2.HotBeveragesListView"
+             Title="Hot Beverages">
+  
+  <ListView x:Name="HotListView"
+            HasUnevenRows="True">
+
+    <ListView.ItemTemplate>
+      <DataTemplate>
+        <ViewCell>
+          <ViewCell.View>
+            <StackLayout Orientation="Horizontal">
+              <Image Source="{Binding ImageUri}" WidthRequest="80" HeightRequest="80"/>
+              <StackLayout Orientation="Vertical" Padding="30">
+                <Label Text="{Binding Name}"
+                       Font="Bold"
+                       FontFamily="Arial"/>
+
+                <Label Text="{Binding Price}"
+                       FontFamily="Arial"/>
+              </StackLayout>
+            </StackLayout>
+          </ViewCell.View>
+        </ViewCell>
+      </DataTemplate>
+    </ListView.ItemTemplate>
+
+  </ListView>
+
+</ContentPage>

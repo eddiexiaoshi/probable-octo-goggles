@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Project2.BeABarista"
+             Title="Be a Barista">
+<StackLayout VerticalOptions="Center">
+  <Label Text="Wanna join us?" FontSize="Large" HorizontalOptions="Center"/>
+    <Grid Padding="0,0,0,5"/>
+  <Label Text="Name:"/>
+  <Entry Text="{Binding Query.Name, Mode=TwoWay}"></Entry>
+
+  <Label Text="Education background:"/>
+  <Entry Text="{Binding Query.Education, Mode=TwoWay}"></Entry>
+
+  <Label Text="Contact:"/>
+  <Entry Text="{Binding Query.Contact, Mode=TwoWay}"></Entry>
+
+  <Button 
+          Text ="Submit"
+          FontSize="20"
+          BackgroundColor="Transparent"
+          TextColor="White"
+          Command="{Binding SaveCommand}"
+          />
+  <Label Text="{Binding Message}"/>
+  </StackLayout>
+</ContentPage>

@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Project2.Homepage"
+             
+             >
+  
+
+  
+  <StackLayout BackgroundColor="Transparent"
+               Padding="30"
+                >
+    <Image Source="looog.png"></Image>
+    
+     <Grid Padding="0,0,0,5"/>
+   <Button Clicked="Button1_OnClicked"
+          Text ="Coffee"
+          FontSize="25"
+          BackgroundColor="Transparent"
+          TextColor="White"
+          />
+
+    <Grid Padding="0,0,0,5"/>
+    <Button Clicked="Button2_OnClicked"
+            Text ="Chocolate"
+            FontSize="25"
+            BackgroundColor="Transparent"
+            TextColor="White"/>
+    
+    <Grid Padding="0,0,0,5"/>
+    <Button Clicked="Button3_OnClicked"
+            Text ="Hot Beverages"
+            FontSize="25"
+            BackgroundColor="Transparent"
+            TextColor="White"/>
+    
+    <Grid Padding="0,0,0,5"/>
+    <Button Clicked="Button4_OnClicked"
+            Text ="Other Indulgences"
+            FontSize="25"
+            BackgroundColor="Transparent"
+            TextColor="White"/>
+
+    
+    <Grid Padding="0,0,0,5"/>
+    <Button Clicked="Button5_OnClicked"
+            Text ="Gift Boxes"
+            FontSize="25"
+            BackgroundColor="Transparent"
+            TextColor="White"/>
+
+<Switch x:Name="MainSwitch"
+        HorizontalOptions="End"
+        Toggled="Switch_OnToggled"/>
+    
+  </StackLayout>
+  
+</ContentPage>

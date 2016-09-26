@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Project2.AboutUs"
+             Title="About Us">
+  <ScrollView>
+  <StackLayout Orientation="Vertical"
+              HorizontalOptions="Center"
+              VerticalOptions="Center"
+               Padding="40">
+
+    <Image Source="mario.png"></Image>
+    <Label Text="Tianke Shi" VerticalOptions="Center" HorizontalOptions="Center" Font="25"/>
+    <Label Text="Title:Programmer" VerticalOptions="Center" HorizontalOptions="Center" Font="15"/>
+    <Label Text="Contact number:0402814122" VerticalOptions="Center" HorizontalOptions="Center" Font="15"/>
+    <Grid Padding="0,0,0,15"/>
+    <Image Source="spider.png"></Image>
+    <Label Text="Shubham Papneja" VerticalOptions="Center" HorizontalOptions="Center" Font="25"/>
+    <Label Text="Title:Project Manager" VerticalOptions="Center" HorizontalOptions="Center" Font="15"/>
+    <Label Text="Contact number:0420380668" VerticalOptions="Center" HorizontalOptions="Center" Font="15"/>
+  </StackLayout>
+  </ScrollView>
+</ContentPage>
